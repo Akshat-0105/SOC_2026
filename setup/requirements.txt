@@ -1,0 +1,44 @@
+# Core Deep Learning
+torch>=2.0.0
+torchvision>=0.15.0
+tensorboard>=2.13.0
+
+# RL Libraries
+gymnasium>=0.29.0
+stable-baselines3>=2.0.0
+pettingzoo>=1.24.0
+supersuit>=3.9.0
+
+# Numerical Computing
+numpy>=1.24.0
+scipy>=1.10.0
+pandas>=2.0.0
+
+# Visualization
+matplotlib>=3.7.0
+seaborn>=0.12.0
+plotly>=5.14.0
+
+# Financial Data & Market Simulation
+yfinance>=0.2.0
+pandas-ta>=0.3.14b
+
+# Regime Detection & Sequence Models
+hmmlearn>=0.3.0
+ruptures>=1.1.8
+statsmodels>=0.14.0
+
+# Utilities
+tqdm>=4.65.0
+wandb>=0.15.0
+pyyaml>=6.0
+jupyter>=1.0.0
+ipython>=8.12.0
+
+# Testing & Quality
+pytest>=7.3.0
+black>=23.3.0
+flake8>=6.0.0
+
+# Optional: GPU Acceleration
+# torch-cuda-specific packages should be installed separately based on your CUDA version
