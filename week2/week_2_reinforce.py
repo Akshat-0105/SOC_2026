@@ -3,6 +3,7 @@ import numpy as np
 import torch
 import torch.nn as nn
 import torch.optim as optim
+import numpy as np
 
 class PolicyNetwork(nn.Module):
     def __init__(self, state_dim, hidden_dim, action_dim):
@@ -134,7 +135,9 @@ def plot_returns(returns, window=10, filename="plots/cartpole_rewards.png"):
 
 
 if __name__ == "__main__":
-    returns, trained_policy = train_reinforce()
-    plot_returns(returns)
 
-    print("Plot saved to plots/cartpole_rewards.png")
+    returns, trained_policy = train_reinforce()
+
+    np.save("reinforce_returns.npy", returns)
+
+    print("Saved reinforce_returns.npy")
